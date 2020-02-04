@@ -27,6 +27,18 @@
  /*
 définir l'étendue de chaque classe
 */
+
+.pauseCommune {
+    background-color:lightgreen;
+}
+
+.pasDeCours {
+    background-color:lightskyblue;
+}
+
+.cours {
+    background-color:lightsalmon;
+}
  .a {
      grid-column: 1 / 3;
      grid-row: 1;
