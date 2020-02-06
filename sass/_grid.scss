@@ -1,0 +1,122 @@
+body {
+    margin: 40px;
+}
+
+
+/*
+       le modèle colonne permet l'affichage sur 3 colonnes
+       chaque colonne mesure 100px.
+       cette dimension reste fixe
+       */
+.conteneur {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:50px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-gap: 20px;
+    background-color: #fff;
+    color: #444;
+}
+
+.boite {
+    background-color: rgb(221, 127, 127);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+/*
+définir l'étendue de chaque classe
+*/
+
+.pauseCommune {
+   background-color:lightgreen;
+}
+
+.pasDeCours {
+   background-color:lightskyblue;
+}
+
+.cours {
+   background-color:lightsalmon;
+}
+
+
+.a {
+    grid-column: 1;
+    grid-row: 2/7;
+}
+
+.b {
+    grid-column: 1;
+    grid-row: 7 / 12;
+}
+
+.c {
+    grid-column: 2;
+    grid-row: 2/6;
+}
+
+
+.d {
+    grid-column: 2;
+    grid-row: 6/8;
+}
+
+.e {
+    grid-column:2;
+    grid-row:8/12;
+}
+.g{
+   grid-column:3;
+   grid-row:5/6;
+}
+.f{
+    grid-column:3;
+    grid-row:2/5;
+}
+
+
+
+.h{
+    grid-column:3;
+    grid-row:6/7;
+}
+.j{
+   grid-column:3;
+   grid-row:10/12;
+}
+.i {
+    grid-column:3;
+    grid-row:7/10;
+}
+
+.k {
+   grid-column:4;
+   grid-row:2/6;
+}
+
+.l{
+   grid-column:4;
+   grid-row:6/8;
+}
+
+.m {
+   grid-column:4;
+   grid-row:8/12;
+}
+
+.n {
+   grid-column:5;
+   grid-row:2/7;
+}
+
+.o {
+   grid-column:5;
+   grid-row:7/10;
+}
+
+.p {
+   grid-column:5;
+   grid-row:10/12;
+}
