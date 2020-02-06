@@ -1,5 +1,8 @@
 body {
-    margin: 40px;
+    font-size:1.5em;
+    width:90%;
+    margin-left:5%;
+    margin-top:3%;
 }
 
 
@@ -19,10 +22,37 @@ body {
 
 .boite {
     background-color: rgb(221, 127, 127);
-    color: rgb(255, 255, 255);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
     border-radius: 5px;
     padding: 20px;
-    font-size: 150%;
+    font-size: 100%;
+}
+
+.day1{
+    @include day();
+    background-color:lightyellow;
+}
+
+.day2{
+    @include day();
+    background-color:lightskyblue;
+}
+
+.day3 {
+    @include day();
+    background-color:lightblue;
+}
+
+.day4{
+    @include day();
+    background-color:lightcoral;
+}
+
+.day5{
+    @include day();
+    background-color:lightseagreen;
 }
 
 /*
@@ -119,4 +149,51 @@ définir l'étendue de chaque classe
 .p {
    grid-column:5;
    grid-row:10/12;
+}
+
+
+@media screen and (max-width:600px) {
+
+    body{
+        font-size:1.2em;
+        width:90%;
+        margin-left:0%;
+    }
+    .boite {
+        font-size:13px;
+        font-weight:bold;
+    }
+
+    .conteneur {
+        grid-gap:10px;
+    }
+    .day1{
+        @include day();
+        background-color:lightyellow;
+        padding-top:15%;
+    }
+    
+    .day2{
+        @include day();
+        background-color:lightskyblue;
+        padding-top:9%;
+    }
+    
+    .day3 {
+        @include day();
+        background-color:lightblue;
+        padding-top:15%;
+    }
+    
+    .day4{
+        @include day();
+        background-color:lightcoral;
+        padding-top:10%;
+    }
+    
+    .day5{
+        @include day();
+        background-color:lightseagreen;
+        padding-top:15%;
+    }
 }
