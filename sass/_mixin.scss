@@ -1,0 +1,15 @@
+@mixin day(){
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+    border:1px solid black;
+}
+
+.day1{
+    @include day();
+    background-color:red;
+}
+
+.day2{
+    @include day();
+    background-color:yellow;
+}

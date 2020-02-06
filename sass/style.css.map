@@ -5,7 +5,6 @@
         "style.scss",
         "_variables.scss",
         "_mixin.scss",
-        "_extend.scss",
         "_extend.scss"
     ],
     "names": [],
